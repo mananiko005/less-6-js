@@ -1,0 +1,38 @@
+ul{
+    list-style-type: none;
+}
+.btnitem{
+    color: blue;
+    border: none;
+   margin-left: 50px;
+}
+.liitem{
+    color: rgb(14, 14, 220);   
+}
+ #clearall,#btn-list{
+    background-color: rgb(4, 0, 255);
+    border: none;
+    border-radius: 50px;
+    color: beige;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 30px;
+ }
+ #clearall:hover,#btn-list:hover{
+    background-color: aliceblue;
+    color: blue;
+    transition: 0.7s;
+ }
+ #input-list{
+   background-color: transparent;
+   border: none;
+   border-bottom: 2px solid blue;
+   outline: none;
+   margin-left: 30px;
+ }
+ h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+    margin-left: 20px;
+ }
