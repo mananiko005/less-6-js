@@ -29,3 +29,11 @@ formEl.addEventListener(`submit`, function (event) {
 clearall.addEventListener("click", function () {
   ulEl.innerHTML = "";
 });
+
+let navEl=document.getElementById(`navBar`)
+let burgerbar=document.getElementById(`burgerBar`)
+
+
+burgerbar.addEventListener(`click`,function(){
+navEl.classList.toggle("activeNav")
+})
