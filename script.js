@@ -1,18 +1,20 @@
-let inputEl = document.getElementById(`input-list`);
-let btnEl = document.getElementById(`btn-list`);
-let ulEl = document.getElementById(`ul-list`);
+"use strict "
+
+let inputEl = document.getElementById("input-list");
+let btnEl = document.getElementById("btn-list");
+let ulEl = document.getElementById("ul-list");
 let clearall = document.getElementById("clearall");
 let formEl=document.getElementById("form-element")
 
-formEl.addEventListener(`submit`, function (event) {
+formEl.addEventListener("submit", function (event) {
   event.preventDefault()
   let inputValue = inputEl.value;
-  if (inputValue === ``) {
+  if (inputValue === "") {
     return;
   }
 
-  let li = document.createElement(`li`);
-  li.classList=`liitem`
+  let li = document.createElement("li");
+  li.classList="liitem"
 
   let btndelete = document.createElement("button");
   btndelete.innerHTML = '<i class="fas fa-trash"></i>';
@@ -23,17 +25,17 @@ formEl.addEventListener(`submit`, function (event) {
   li.textContent = inputValue;
   li.appendChild(btndelete);
   ulEl.appendChild(li);
-  inputEl.value = ``;
+  inputEl.value = "";
 });
 
 clearall.addEventListener("click", function () {
   ulEl.innerHTML = "";
 });
 
-let navEl=document.getElementById(`navBar`)
-let burgerbar=document.getElementById(`burgerBar`)
+let navEl=document.getElementById("navBar")
+let burgerbar=document.getElementById("burgerBar")
 
 
-burgerbar.addEventListener(`click`,function(){
+burgerbar.addEventListener("click",function(){
 navEl.classList.toggle("activeNav")
 })
